@@ -30,7 +30,7 @@ router.get('/create' ,async function(req, res){
 //--------------------------------------------------------------------------
 // show all document in collection
 router.get("/find" , async function(req , res){
-  const alluser = await userModel.findOne({name: "chhotu"});
+  const alluser = await userModel.find();
   res.send(alluser);
 })
 //--------------------------------------------------------------------------
